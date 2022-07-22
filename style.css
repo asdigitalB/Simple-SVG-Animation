@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#man {
+    animation: move forwards 3s linear;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}    
+
+#cloud-one {
+    animation: right forwards 3s linear;
+}
+
+#cloud-two {
+    animation: left forwards 3s linear;
+}
+
+@keyframes right {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(60px);
+    }
+}
+
+@keyframes left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-60px);
+    }
+}
+
+#plant {
+    animation: wiggle forwards 3s linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(4deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
